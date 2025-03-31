@@ -4,8 +4,6 @@ import com.edu.commonutils.R;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
-import static jdk.nashorn.internal.runtime.regexp.joni.Config.log;
-
 // 统一异常
 @RestControllerAdvice
 @Slf4j

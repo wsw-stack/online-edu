@@ -29,6 +29,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/edu/teacher")
 @RequiredArgsConstructor
+@CrossOrigin
 public class TeacherController {
     private final TeacherService teacherService;
 
@@ -79,7 +80,7 @@ public class TeacherController {
         Integer level = teacherQuery.getLevel();
         String begin = teacherQuery.getBegin();
         String end = teacherQuery.getEnd();
-        if(!name.isEmpty()) {
+        if(!StringUtils.isEmpty(name)) {
             queryWrapper.like("name", name);
         }
         if(!StringUtils.isEmpty(level)) {
