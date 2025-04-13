@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.annotation.*;
 import java.util.Date;
 import java.io.Serializable;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -30,6 +32,7 @@ public class CourseDescription implements Serializable {
 
     @ApiModelProperty(value = "课程ID")
     @TableId(value = "id", type = IdType.INPUT) // 手动输入（与Course的id关联），而不是自动生成
+    @JsonSerialize(using = ToStringSerializer.class)
     private Long id;
 
     @ApiModelProperty(value = "课程简介")

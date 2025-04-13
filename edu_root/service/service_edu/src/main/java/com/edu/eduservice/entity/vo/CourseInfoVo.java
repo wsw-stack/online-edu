@@ -12,7 +12,7 @@ public class CourseInfoVo {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "课程ID")
-    private String id;
+    private Long id;
 
     @ApiModelProperty(value = "课程讲师ID")
     private String teacherId;

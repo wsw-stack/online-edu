@@ -1,0 +1,10 @@
+2025-04-03 11:03:59.303 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.edu.mapper]' package. Please check your configuration.
+2025-04-03 11:33:37.198 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m6s903ms).
+2025-04-03 12:54:28.682 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49m51s250ms).
+2025-04-03 14:21:57.835 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h27m29s153ms).
+2025-04-03 14:57:05.461 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=35m7s626ms).
+2025-04-03 15:09:45.229 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.edu.mapper]' package. Please check your configuration.
+2025-04-03 15:24:40.504 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.edu.mapper]' package. Please check your configuration.
+2025-04-03 22:38:43.235 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.edu.mapper]' package. Please check your configuration.
+2025-04-03 22:48:28.463 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.edu.mapper]' package. Please check your configuration.
+2025-04-03 23:01:43.911 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.edu.mapper]' package. Please check your configuration.

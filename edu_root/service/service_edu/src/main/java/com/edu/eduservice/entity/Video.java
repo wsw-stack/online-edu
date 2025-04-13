@@ -1,11 +1,12 @@
 package com.edu.eduservice.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.*;
+
 import java.util.Date;
-import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -23,21 +24,24 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@ApiModel(value="EduVideo对象", description="课程视频")
+@ApiModel(value="Video对象", description="课程视频")
 @TableName("edu_video")
-public class EduVideo implements Serializable {
+public class Video implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "视频ID")
     @TableId(value = "id", type = IdType.ID_WORKER)
-    private String id;
+    @JsonSerialize(using = ToStringSerializer.class)
+    private Long id;
 
     @ApiModelProperty(value = "课程ID")
-    private String courseId;
+    @JsonSerialize(using = ToStringSerializer.class)
+    private Long courseId;
 
     @ApiModelProperty(value = "章节ID")
-    private String chapterId;
+    @JsonSerialize(using = ToStringSerializer.class)
+    private Long chapterId;
 
     @ApiModelProperty(value = "节点名称")
     private String title;
@@ -70,9 +74,11 @@ public class EduVideo implements Serializable {
     private Long version;
 
     @ApiModelProperty(value = "创建时间")
+    @TableField(fill = FieldFill.INSERT)
     private Date gmtCreate;
 
     @ApiModelProperty(value = "更新时间")
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date gmtModified;
 
 

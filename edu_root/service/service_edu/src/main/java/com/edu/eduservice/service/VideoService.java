@@ -1,6 +1,6 @@
 package com.edu.eduservice.service;
 
-import com.edu.eduservice.entity.EduVideo;
+import com.edu.eduservice.entity.Video;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -11,6 +11,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author haitong
  * @since 2025-04-02
  */
-public interface VideoService extends IService<EduVideo> {
+public interface VideoService extends IService<Video> {
 
+    void removeVideoByCourseId(Long courseId);
 }

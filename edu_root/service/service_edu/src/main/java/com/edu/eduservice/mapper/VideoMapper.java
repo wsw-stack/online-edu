@@ -1,6 +1,6 @@
 package com.edu.eduservice.mapper;
 
-import com.edu.eduservice.entity.EduVideo;
+import com.edu.eduservice.entity.Video;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author haitong
  * @since 2025-04-02
  */
-public interface VideoMapper extends BaseMapper<EduVideo> {
+public interface VideoMapper extends BaseMapper<Video> {
 
 }
